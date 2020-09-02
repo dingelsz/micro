@@ -3,7 +3,7 @@ def fib(n):
 
     dp = [1, 1]
     for i in range(n - 2):
-        dp += dp[-1] + dp[-2]
+        dp += [dp[-1] + dp[-2]]
     return dp[-1]
 
 def test_fib():
